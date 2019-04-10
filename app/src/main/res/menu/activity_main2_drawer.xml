@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Name                 Euan Upton-->
+<!--Student ID           S1736677-->
+<!--Programme of Study   Computing-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Search Actions">
+        <menu>
+            <item
+                android:id="@+id/NESW"
+                android:title="Earthquakes: north/east/south/west" />
+            <item
+                android:id="@+id/DepestEathquake"
+                android:title="Deapest/shallowest earthquakes"/>
+
+            <item
+                android:id="@+id/HighestMagnitude"
+                android:title="Search high/low magnitude"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Refresh data">
+        <menu>
+            <item
+                android:id="@+id/ReloadData"
+                android:title="Reload data" />
+        </menu>
+    </item>
+
+</menu>

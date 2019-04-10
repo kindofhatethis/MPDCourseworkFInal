@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Name    Euan Upton-->
+<!--Student ID  S1736677-->
+<!--Programme of Study  Computing-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main6Activity"
+    tools:showIn="@layout/app_bar_main6">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="731dp"
+        android:layout_height="182dp"
+        map:layout_editor_absoluteX="0dp"
+        map:layout_editor_absoluteY="0dp"
+        tools:context=".MapsActivity"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mMap"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="147dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:liteMode="true"
+            app:mapType="normal" />
+    </fragment>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/location_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/earthquake_in"
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_location"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/the_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/location_context"
+        android:text="PlaceHolder"
+        app:layout_constraintStart_toEndOf="@+id/location_context"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="NotSibling" />
+
+
+    <TextView
+        android:id="@+id/time_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_context"
+        android:layout_marginStart="2dp"
+        android:text="@string/time_of_earthquake"
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_time"
+        app:layout_constraintStart_toStartOf="@+id/date_context" />
+
+    <TextView
+        android:id="@+id/the_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_context"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/time_context"
+        android:text="PlaceHolder"
+        app:layout_constraintStart_toEndOf="@+id/time_context"
+        app:layout_constraintTop_toBottomOf="@+id/the_long" />
+
+    <TextView
+        android:id="@+id/date_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_context"
+        android:layout_marginStart="23dp"
+        android:text="@string/date_of_earthquake"
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_date"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/the_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_context"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/date_context"
+        android:text="PlaceHolder"
+        app:layout_constraintStart_toStartOf="@+id/the_time"
+        app:layout_constraintTop_toBottomOf="@+id/the_time" />
+
+    <TextView
+        android:id="@+id/depth_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_context"
+        android:layout_marginStart="24dp"
+        android:text="@string/depth"
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_depth"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/the_depth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_context"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/depth_context"
+        android:text="PlaceHolder"
+        app:layout_constraintStart_toEndOf="@+id/depth_context"
+        app:layout_constraintTop_toBottomOf="@+id/date_context" />
+
+            <TextView
+                android:id="@+id/depthBox"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/depth_box"
+                app:layout_constraintStart_toEndOf="@+id/the_depth"
+                app:layout_constraintTop_toBottomOf="@+id/the_date" />
+
+
+    <TextView
+        android:id="@+id/magnitude_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/depth_context"
+        android:layout_marginStart="24dp"
+        android:text="@string/magnitude"
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_magnitude"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/the_magnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/depth_context"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/magnitude_context"
+        android:text="PlaceHolder"
+        app:layout_constraintStart_toEndOf="@+id/magnitude_context"
+        app:layout_constraintTop_toBottomOf="@+id/the_depth" />
+
+
+            <TextView
+                android:id="@+id/magBox"
+                android:layout_width="60dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mag_box"
+                app:layout_constraintLeft_toRightOf="@+id/the_magnitude"
+                app:layout_constraintStart_toEndOf="@+id/the_magnitude"
+                app:layout_constraintTop_toBottomOf="@+id/depthBox" />
+
+
+    <TextView
+        android:id="@+id/lat_long_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/magnitude_context"
+        android:layout_marginEnd="10dp"
+        android:text="@string/lat_long"
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_lat"
+        app:layout_constraintEnd_toStartOf="@+id/the_lat" />
+
+    <TextView
+        android:id="@+id/the_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/magnitude_context"
+        android:layout_marginEnd="2dp"
+        android:layout_toRightOf="@+id/lat_long_context"
+        android:text="Lat"
+        app:layout_constraintBaseline_toBaselineOf="@+id/split_lat_long"
+        app:layout_constraintEnd_toStartOf="@+id/split_lat_long" />
+
+    <TextView
+        android:id="@+id/split_lat_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/magnitude_context"
+        android:layout_toRightOf="@+id/the_lat"
+        android:paddingRight="1dp"
+        android:text=","
+        app:layout_constraintBaseline_toBaselineOf="@+id/the_long"
+        app:layout_constraintEnd_toStartOf="@+id/the_location"
+        app:layout_constraintStart_toStartOf="@+id/the_location" />
+
+    <TextView
+        android:id="@+id/the_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/magnitude_context"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/split_lat_long"
+        android:paddingBottom="10dp"
+        android:text="Long"
+        app:layout_constraintStart_toStartOf="@+id/split_lat_long"
+        app:layout_constraintTop_toBottomOf="@+id/the_location" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/maggreen"></solid>
+    <corners android:radius="2dp"/>
+    <!--Name    Euan Upton-->
+    <!--Student ID  S1736677-->
+    <!--Programme of Study  Computing-->
+</shape>

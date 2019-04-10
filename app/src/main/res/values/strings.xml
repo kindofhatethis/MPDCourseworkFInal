@@ -1,0 +1,45 @@
+<!--Name    Euan Upton-->
+<!--Student ID  S1736677-->
+<!--Programme of Study  Computing-->
+<resources>
+    <string name="app_name">MPD Coursework Final</string>
+    <string name="title_activity_main2">Earthquake List</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">British Earthquakes</string>
+    <string name="nav_header_subtitle">Contains British Geological Survey materials ©NERC 2019</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="CompassPoints">
+        <item>North</item>
+        <item>East</item>
+        <item>South</item>
+        <item>West</item>
+    </string-array>
+
+
+    <string-array name="DeapShallow">
+        <item>Deepest</item>
+        <item>Shallowest</item>
+    </string-array>
+
+
+    <string-array name="MagHighSmall">
+        <item>Highest</item>
+        <item>Lowest</item>
+    </string-array>
+
+    <string name="title_activity_main3">Farthest Earthquakes</string>
+    <string name="title_activity_main4">Deep/shallow Earthquakes</string>
+    <string name="title_activity_main5">Highest/lowest Magnitude</string>
+    <string name="title_activity_main6">Detailed View</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="earthquake_in">Earthquake in:</string>
+    <string name="time_of_earthquake">Time of Earthquake:</string>
+    <string name="date_of_earthquake">Date of Earthquake:</string>
+    <string name="depth">Depth:</string>
+    <string name="magnitude">Magnitude:</string>
+    <string name="lat_long">Lat/Long:</string>
+</resources>

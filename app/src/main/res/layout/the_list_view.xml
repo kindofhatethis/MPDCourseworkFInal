@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Name                 Euan Upton-->
+<!--Student ID           S1736677-->
+<!--Programme of Study   Computing-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/location_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Earthquake in: " />
+
+    <TextView
+        android:id="@+id/the_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PlaceHolder"
+        android:layout_toRightOf="@+id/location_context"/>
+
+
+    <TextView
+        android:id="@+id/time_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Time of Earthquake: "
+        android:layout_below="@+id/location_context"/>
+
+    <TextView
+        android:id="@+id/the_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="PlaceHolder"
+        android:layout_below="@+id/location_context"
+        android:layout_toRightOf="@+id/time_context"/>
+
+    <TextView
+        android:id="@+id/date_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Date of Earthquake: "
+        android:layout_below="@+id/time_context"/>
+
+    <TextView
+        android:id="@+id/the_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="PlaceHolder"
+        android:layout_below="@+id/time_context"
+        android:layout_toRightOf="@+id/date_context"/>
+
+    <TextView
+        android:id="@+id/depth_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Depth: "
+        android:layout_below="@+id/date_context"/>
+
+    <TextView
+        android:id="@+id/the_depth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="PlaceHolder"
+        android:layout_below="@+id/date_context"
+        android:layout_toRightOf="@+id/depth_context"/>
+
+    <TextView
+        android:id="@+id/depthBox"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/the_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="196dp"
+        android:layout_toEndOf="@+id/the_depth"
+        android:background="@drawable/depth_box" />
+
+
+    <TextView
+        android:id="@+id/magnitude_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Magnitude: "
+        android:layout_below="@+id/depth_context"/>
+
+
+    <TextView
+        android:id="@+id/the_magnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="PlaceHolder"
+        android:layout_below="@+id/depth_context"
+        android:layout_toRightOf="@+id/magnitude_context"/>
+
+    <TextView
+        android:id="@+id/magBox"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/magnitude_context"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="162dp"
+        android:layout_toEndOf="@+id/the_magnitude"
+        android:background="@drawable/mag_box" />
+
+    <TextView
+        android:id="@+id/lat_long_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Lat/Long: "
+        android:layout_below="@+id/magnitude_context"/>
+
+    <TextView
+        android:id="@+id/the_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:text="Lat"
+        android:layout_below="@+id/magnitude_context"
+        android:layout_toRightOf="@+id/lat_long_context"/>
+    <TextView
+        android:id="@+id/split_lat_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="1dp"
+        android:text=","
+        android:layout_below="@+id/magnitude_context"
+        android:layout_toRightOf="@+id/the_lat"/>
+
+    <TextView
+        android:id="@+id/the_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="Long"
+        android:layout_below="@+id/magnitude_context"
+        android:layout_toRightOf="@+id/split_lat_long"/>
+
+
+</RelativeLayout>
